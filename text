@@ -1,0 +1,33 @@
+ <div class="text-center mb-3">
+                <button onclick="chooselanguage('th')">th</button>
+                <button  onclick="chooselanguage('EN')">EN</button>
+            </div>
+        </div>
+    </div>
+   <script>
+    //ประกาศ function chooselanguage ที่มี button th EN รอรับค่า
+    //ประกาศ language เพื่อรอประกาศใน document
+    function chooselanguage(language){
+        //ประกาศค่า let change เพื่อให้ตรวจค่า chooselanguageเป็น EN OR th
+         let change ={
+            EN:{
+                name : "phichartawr",
+                id : "ID : 67134327",
+            },
+            th:{
+                name : "นาย: พิชรัตน์ มีสรรพวงศ์",
+                id : "หัสนักศึกษา: 67134327",
+            }
+        }
+        //document.getElementById('name'): คำสั่งนี้ค้นหาและเข้าถึงองค์ประกอบ (element) ใน HTML ที่มี id="name". 
+        //มันใช้ฟังก์ชัน getElementById เพื่อเลือกองค์ประกอบนี้โดยเฉพาะ ซึ่งในโค้ดที่คุณให้มา คือแท็ก <p> ที่มี ID ชื่อว่า name.
+        
+        //.innerText: คุณสมบัตินี้ใช้เพื่อกำหนดหรือรับข้อความที่อยู่ภายในองค์ประกอบที่เลือกไว้ 
+        //(ในกรณีนี้คือ <p id="name"> ตัวข้อความภายใน <p> จะแสดงผลในหน้าเว็บ).
+        // การเขียนแบบนี้หมายความว่าคุณกำลังเปลี่ยนแปลงข้อความที่อยู่ภายในองค์ประกอบนี้.
+
+        //change เปลี่ยนค่าเป็นอะไร EN OR th เเละทําการ [language เปลี่ยน] ตามด้วยID
+        document.getElementById('name').innerText = change[language].name;
+        document.getElementById('id').innerText = change[language].id;
+    }
+   </script>

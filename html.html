@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar-expand-sm navbar bg-warning border border-1 border-dark">
+        <button class="navbar-toggler ms-auto me-2"data-bs-toggle="collapse"data-bs-target="#navbartoggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapsed navbar-collapse"id="navbartoggle">
+            <ul class="navbar-nav mx-auto">
+                <li>
+                    <a class="nav-link ms-2" id="Ipad" href="#">Ipad</a>
+                </li>
+                <li>
+                    <a  class="nav-link ms-2" id="Iphone" href="#">Iphone</a>
+                </li>
+                <li class="dropdown">
+                    <a  class="nav-link mx-2 ms-2 dropdown-toggle" data-bs-toggle="dropdown" id="Macbook" href="#">Macbook</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item nav-item">
+                            <a class="nav-link" id="MacbookAir" href="#">Macbook Air</a>
+                        </li>
+                        <li class="dropdown-item nav-item">
+                            <a class="nav-link" id="Macbookpro" href="#">Macbook Pro</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a  class="nav-link mx-2 ms-2" id="About" href="#">About</a>
+                </li>
+            </ul>
+                <div class="mx-2">
+                    <button class="mx-1" onclick="chooselanguage('TH')">TH</button>
+                    <button class="mx-1" onclick="chooselanguage('EN')">EN</button>
+                </div>
+        </div>
+    </nav>
+    <Script>
+        function chooselanguage(language){
+            let change ={
+                EN:{
+                    Ipad : "Ipad",
+                    Iphone : "Iphone",
+                    Macbook : "Macbook",
+                    MacbookAir : "MacbookAir",
+                    Macbookpro : "Macbookpro",
+                    About : "About",
+                },
+                TH:{
+                    Ipad : "ไอเเพต",
+                    Iphone : "ไอโฟน",
+                    Macbook : "เมค",
+                    MacbookAir : "เมคเเอร์",
+                    Macbookpro : "เมคโปร",
+                    About : "เกี่ยวกัน"
+                }
+            }
+            document.getElementById('Ipad').innerText=change[language].Ipad;
+            document.getElementById('Iphone').innerText=change[language].Iphone;
+            document.getElementById('Macbook').innerText = change[language].Macbook
+            document.getElementById('Macbookpro').innerText = change[language].Macbookpro
+            document.getElementById('MacbookAir').innerText = change[language].MacbookAir
+            document.getElementById('About').innerText = change[language].About
+        }
+    </Script>
+    <div class="box-1 mt-3">
+        <div class="box-2">
+            <div class="box-3">
+                <a href="#"><img src="https://scontent.fbkk29-5.fna.fbcdn.net/v/t39.30808-6/463966852_970146455153558_7021614132397154822_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEnPuVNgj1msHTC3ROBJFBFM4_Rm44WDRUzj9GbjhYNFT0pfefnNRvoM9S9LfQWdD81WxLmhCfFsddROh-Ai402&_nc_ohc=rp89ij_WLB4Q7kNvgGqapkr&_nc_ht=scontent.fbkk29-5.fna&_nc_gid=ARcW__SXiqsO4H748zMvYN_&oh=00_AYD4yv62NLlDNp602YTm2O_abjzEJN5vMV7R_jNoo3vUJQ&oe=671BE4A3" alt=""></a>
+            </div>
+            <div class="box-4">
+                <div class="box-5">
+                    <a href="#"><img src="https://scontent.fbkk29-8.fna.fbcdn.net/v/t39.30808-6/464003652_970145505153653_7711291840346616336_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGcFYhSV_9O6qXcFTNFD0ph0gUUsrqiaxHSBRSyuqJrEYPZQmtpo1dLBSmmWyiMe_udSYldE07U9WbdpM_ux1BN&_nc_ohc=69-p2AgqN7IQ7kNvgGqwRqh&_nc_ht=scontent.fbkk29-8.fna&_nc_gid=AWTVCqIyBhbDl6iF5p7Z03c&oh=00_AYBtM9YT6ju6GQvDh8zJLNTMuGUctnXSRSGTUEcGWgiLsQ&oe=671BC998" alt=""></a>
+                    <a href="#"><img src="https://scontent.fbkk29-6.fna.fbcdn.net/v/t39.30808-6/462318642_961480046020199_4457774467896589370_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFzIYdXY_UpyqElsXyPvHaQcvnJOHg1RJdy-ck4eDVEl9XdrQqRgMwiT2hUN4Wpz84XfRHYReHU8T6xDJige9VR&_nc_ohc=tkjr3DJQTFQQ7kNvgEo30bW&_nc_ht=scontent.fbkk29-6.fna&_nc_gid=AfP5tnpuEqwAvcD9_zmZyXn&oh=00_AYBzKQrGbdF9p9DajjMeed7BSzvKKFHjXEsJJbxlAitXVA&oe=671BE9CA" alt=""></a>
+                    <a href="#"><img src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t39.30808-6/462605819_962709232563947_5775103662125037735_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHnaS8bHYzd3w4yvpYsS12wXzhJPGxoSKRfOEk8bGhIpEIDCeeD_wzDGpyYdMC6NA6olW9G__l-niWtP3360fHI&_nc_ohc=xqRlSPtN6mcQ7kNvgHpNBhv&_nc_ht=scontent.fbkk29-4.fna&_nc_gid=AdF17Ht3pwsfmIwtGEaihVR&oh=00_AYBaXX5-fkjLfd7Nguyw7fAHy1_98r_G8-QgphPy2OoYOw&oe=671BD640" alt=""></a>
+                    <a href="#"><img src="https://scontent.fbkk29-8.fna.fbcdn.net/v/t39.30808-6/463794327_969153288586208_7453619984098914252_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGKE_sTztfcFp7wOe5ydj7qpDu-I8SO87qkO74jxI7zuieHExWY_6GxHJya2nFVyqH32WszKuFs915bhZc9bjdq&_nc_ohc=j7KQwSUiS4sQ7kNvgEj5AQW&_nc_ht=scontent.fbkk29-8.fna&_nc_gid=AfGIRgXLmf9zpy_z65yHLtu&oh=00_AYCcecFxb5qVUNEZ67QSWUlyw1bpAJ0bCzSenRkVEeGznA&oe=671BCF06" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .box-1 img {
+        width: 100%;
+        }
+        .box-1{
+            margin:auto;
+            max-width: 1200px;
+        }
+        .box-2{
+            display: flex;
+            gap: 20px;
+        }
+        .box-3{
+            flex-basis: 50%;
+        }
+        .box-4{
+            flex-basis: 50%;
+        }
+        .box-5{
+            grid-template-columns: repeat(2,1fr);
+            display: grid;
+            gap: 20px;
+        }
+        @media screen and (max-width: 480px) {
+            .box-2 {
+                display: block;
+                gap: 20px;
+            }
+            .box-2 img{
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</body>
+</html>
